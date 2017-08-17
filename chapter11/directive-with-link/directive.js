@@ -4,6 +4,7 @@ angular.module('stockMarketApp')
     return {
       templateUrl: 'stock.html',
       restrict: 'AE',
+        scope:false,
       link: function($scope, $element, $attrs) {
         $scope.getChange = function(stock) {
           return Math.ceil(((stock.price - stock.previous) /

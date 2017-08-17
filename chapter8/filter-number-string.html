@@ -4,7 +4,11 @@
   <title>Filters in Action</title>
 </head>
 <body ng-app="filtersApp">
-
+<style>
+  li{
+    list-style-type:decimal;
+  }
+</style>
 <ul ng-controller="FilterCtrl as ctrl">
   <li>
     Amount - {{ctrl.amount}}
@@ -49,10 +53,13 @@
   <li>
     Custom Date filter: {{ctrl.startTime | date:'M/dd, yyyy'}}
   </li>
+  <li>
+    Custom Date filter: {{ctrl.startTime | date:'yyyy year mm month dd'}}
+  </li>
 </ul>
 
 <script
-  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.js">
+  src="/angular.js">
 </script>
 
 <script type="text/javascript">

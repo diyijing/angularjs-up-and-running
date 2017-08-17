@@ -19,6 +19,7 @@ angular.module('stockMarketApp')
             price: 500,
             previous: 200
           };
+            //$scope.stockData.name = 'Still Directive Stock'
         };
       }
     };

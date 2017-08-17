@@ -9,4 +9,5 @@ angular.module('stockMarketApp', [])
       {name: 'Third Stock', price: 110, previous: 110},
       {name: 'Fourth Stock', price: 400, previous: 420}
     ];
+    self.stock =   {name: 'First Stock', price: 100, previous: 220}
   }]);

@@ -18,11 +18,11 @@
   </div>
 
 <script
-  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.js">
+  src="/angular.js">
 </script>
 <script>
   angular.module('notesApp', [])
-    .controller('MainCtrl', ['$http', function($http) {
+    .controller('MainCtrl', ['$http','$q', function($http,$q) {
       var self = this;
       self.items = [];
       $http.get('/api/note').then(function(response) {

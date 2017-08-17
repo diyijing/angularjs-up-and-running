@@ -1,0 +1,26 @@
+{
+  "name": "angularjs-up-and-running",
+  "version": "1.0.0",
+  "description": "angularjs-up-and-running\r ========================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "http-server -p 1000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shyamseshadri/angularjs-up-and-running.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shyamseshadri/angularjs-up-and-running/issues"
+  },
+  "homepage": "https://github.com/shyamseshadri/angularjs-up-and-running#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.7.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0"
+  }
+}

@@ -1,7 +1,7 @@
 // File: chapter11/directive-with-scope/app.js
 
 angular.module('stockMarketApp', [])
-  .controller('MainCtrl', [function() {
+  .controller('MainCtrl', ['$scope',function($scope) {
     var self = this;
     self.stocks = [
       {name: 'First Stock', price: 100, previous: 220},
@@ -9,4 +9,11 @@ angular.module('stockMarketApp', [])
       {name: 'Third Stock', price: 110, previous: 110},
       {name: 'Fourth Stock', price: 400, previous: 420}
     ];
+      self.data={};
+      self.data.stock={name: 'Another Stock', price: 100, previous: 220}
+      setInterval(function () {$scope;
+          self.data.stock.price+=10
+          $scope.$digest();
+          //$scope.$apply();
+      },200)
   }]);

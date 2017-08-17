@@ -39,7 +39,7 @@ angular.module('notesApp', [])
       // configuration, change the value of
       // shouldHaveDefaults to true and try
       // running the example
-      var shouldHaveDefaults = false;
+      var shouldHaveDefaults = true;
 
       // Get configuration from server
       // Set shouldHaveDefaults somehow
